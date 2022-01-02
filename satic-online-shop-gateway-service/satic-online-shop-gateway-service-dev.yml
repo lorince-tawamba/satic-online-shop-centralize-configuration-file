@@ -1,0 +1,27 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+server:
+  port: 9000
+
+# =================================
+# EUREKA CLIENT
+# =================================
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+# =======================================
+# Enables Spring Boot Actuator end points
+# =======================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "ALWAYS"
