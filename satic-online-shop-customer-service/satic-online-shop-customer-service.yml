@@ -1,0 +1,39 @@
+server:
+  port: 8585
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bd_online_shop_customer_srvice
+    username: postgres
+    password: Junior@2019@Ismael
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        connection:
+          characterEncoding: UTF-8
+          CharSet: UTF-8
+          useUnicode: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  config:
+    import: optional:configserver:http://localhost:8888
+    profiles:
+       active: prod
+
+
+
+  # enables Spring Boot Actuator end points
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/ 
