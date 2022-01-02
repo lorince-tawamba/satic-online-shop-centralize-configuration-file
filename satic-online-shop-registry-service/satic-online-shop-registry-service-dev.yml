@@ -2,7 +2,7 @@
 # SERVICE CONFIGURATION
 # =================================
 server:
-  port: 9999
+  port: 8080
 
 # =======================================
 # Enables Spring Boot Actuator end points
