@@ -1,0 +1,17 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+server:
+  port: 8081
+
+# =======================================
+# Enables Spring Boot Actuator end points
+# =======================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "ALWAYS"
