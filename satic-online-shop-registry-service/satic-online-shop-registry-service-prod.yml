@@ -1,0 +1,31 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+server:
+  port: 9999
+
+# =======================================
+# Enables Spring Boot Actuator end points
+# =======================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+
+# =======================================
+# Enables Eureka client
+# =======================================
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync
