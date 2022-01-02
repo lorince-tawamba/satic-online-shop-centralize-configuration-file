@@ -4,7 +4,7 @@ Les fichiers de configuration.
 
 ## Architecture
 
-![App Screenshot](https://github.com/lorince-tawamba/satic-online-shop-centralize-configuration-file/Architecture.jpg?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/lorince-tawamba/satic-online-shop-centralize-configuration-file/Architecture?text=App+Screenshot+Here)
 
 # Authors
 
