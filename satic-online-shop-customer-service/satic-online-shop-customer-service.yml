@@ -2,7 +2,7 @@
 # SERVICE CONFIGURATION
 # =================================
 server:
-  port: 8585
+  port: 8081
 
 # =================================
 # EUREKA CLIENT
