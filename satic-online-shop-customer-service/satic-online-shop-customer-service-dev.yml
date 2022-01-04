@@ -31,7 +31,7 @@ management:
 # =======================================
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/bd_online_shop_customer_service?useLegacyDatetimeCode=false&serverTimezone=Africa/Douala&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    url: jdbc:postgresql://localhost:5432/employees
     username: postgres
     password: Junior@2019@Ismael
   sql:
