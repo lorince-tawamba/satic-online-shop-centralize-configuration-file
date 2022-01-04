@@ -10,8 +10,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: Junior@2019@Ismael
+    username: dev
+    password: dev
   jpa:
     hibernate:
       ddl-auto: update
